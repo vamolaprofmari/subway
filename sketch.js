@@ -1,5 +1,5 @@
 var path,boy, leftBoundary,rightBoundary;
-var pathImg,boyImg;
+var pathImg,boyImg, JakeImg;
 var i;
 
 function preload(){
@@ -8,12 +8,12 @@ function preload(){
  
 pathImg = ladImage("path.png");
 
-JakeImg = loadAnimation("assets/Jake1.png", 
-"assets/Jake2.png",
+JakeImg = loadAnimation("assests/Jake1.png", 
+"assests/Jake2.png",
 
- "assets/jake3.png",
+ "assests/jake3.png",
 
- "assests/jake4.png");
+ "assests/jake4.PNG");
 
 
 
@@ -33,7 +33,7 @@ path.addAnimation(pathImg);
 path.velocityY= 5;
 
 boy =createSprite(300,200,30,30);
-boy.addAnimation(JakeImg);
+boy.addAnimation("JakeRunning", JakeImg);
 boy.velocityY= -5;
 
 
